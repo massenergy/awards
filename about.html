@@ -31,9 +31,6 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
-
-
-
   <link rel="stylesheet" href="css/css-circular-prog-bar.css">
 
 
@@ -41,62 +38,61 @@
 
 <body>
   <div class="top_container sub_pages">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="Strive To Excel">
-            <span>
-              St. Mark Kiserian Mixed <br> Secondary School
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="about.html"> About </a>
-                </li>
+   <!-- Start replaceable header section -->
+   <header class="header_section">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Strive To Excel">
+          <span>
+            St. Mark Kiserian Mixed <br> Secondary School
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <li class="nav-item ">
-                  <a class="nav-link" href="teacher.html"> Teachers </a>
-                </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+            <ul class="navbar-nav  ">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="about.html"> About </a>
+              </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="robotics.html"> science, engineering and robotics </a>
-                </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="teacher.html"> Teachers </a>
+              </li>
 
-                <li class="nav-item"></li>
-                <a class="nav-link" href="activities.html"> co-curricula activities </a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="robotics.html"> science, engineering and robotics </a>
+              </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
+              <li class="nav-item"></li>
+              <a class="nav-link" href="activities.html"> co-curricula activities </a>
+              </li>
 
-                <li class="nav-item">
-                  <a class="nav-link"  href="https://workspace.google.com/dashboard" target="_blank" > Login</a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
 
-              </ul>
-          <!--      <form class="form-inline float-right my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <a href="https://workspace.google.com/dashboard" target="_blank" class="btn my-2 my-sm-0 nav_search-btn">Login</a>
-              </form>  -->
-            </div>
-        </nav>
-      </div>
-    </header>
+              <li class="nav-item">
+                <a class="nav-link"  href="https://workspace.google.com/dashboard" target="_blank" > Login</a>
+              </li>
 
-  </div>
-  <!-- end header section -->
+            </ul>
+        <!--      <form class="form-inline float-right my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+              <a href="https://workspace.google.com/dashboard" target="_blank" class="btn my-2 my-sm-0 nav_search-btn">Login</a>
+            </form>  -->
+          </div>
+      </nav>
+    </div>
+  </header>
+ <!-- End replaceable header section -->
 
   <!-- about section -->
   <section class="about_section layout_padding">
@@ -158,23 +154,41 @@
   <!-- about section -->
 
 
+  <!-- start footer section -->
 
-
-
-  <!-- footer section -->
-  <section class="container-fluid footer_section">
+    <section class="container-fluid footer_section">
     <p>
       Copyright &copy; 2024 All Rights Reserved By
       <a href="https://html.design/">Shule Leo</a>
     </p>
   </section>
-  <!-- footer section -->
+  <!-- end footer section -->
+
+
+  <!-- Start page link selector script-->
+  <script>
+    // Get the current URL
+    const currentUrl = window.location.href;
+
+    // Get all nav links
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Loop through each nav link
+    navLinks.forEach(link => {
+        // Check if the link's href matches the current URL
+        if (link.href === currentUrl) {
+            link.classList.add('active'); // Add the 'active' class
+        }
+    });
+  </script>
+  <!-- End page link selector script-->
+
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <!-- progreesbar script -->
 
-  </script>
+  
 
 </body>
 

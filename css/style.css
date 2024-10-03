@@ -67,38 +67,33 @@ body {
   padding-bottom: 50px;
 }
 
-/*header section*/
+/*start header section*/
 
 .header_section {
   padding-top: 10px;
 }
 
 nav.navbar.navbar-expand-lg {
-
   padding: 10px 0;
 }
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   padding: 10px 20px;
-  color: #2d2c2c;
+  color: #2d2c2c; /* Default link color */
   font-size: 15px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active .nav-link {
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link.active {
   color: #007bff; /* Active link color */
-  font-weight: bold;
+  font-weight: bold; /* Bold active link */
 }
 
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: #009900;
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link:hover,
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link:focus {
+  color: #009900; /* Change color on hover or focus */
+  text-decoration: none; /* Remove underline */
 }
 
 .btn,
@@ -142,21 +137,6 @@ a:focus {
   margin-right: 7px;
 }
 
- /*
-.custom_nav-container .nav_search-btn {
- background-image: url(../images/search-icon.png);
-  background-size: 32px;
-  background-repeat: no-repeat;
-  background-position-y: 0px;
-  width: 35px;
-  height: 35px;
-  padding: 100%; 
-  border: none;
-  color:blue;
-} */
-
-
-
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -165,7 +145,7 @@ a:focus {
 .navbar-brand span {
   font-size: 30px;
   font-weight: 700;
-  color: #009900;
+  color: #009900; /* Brand color */
 }
 
 .custom_nav-container {
@@ -182,7 +162,7 @@ a:focus {
   background-size: 40px;
 }
 
-/*end header section*/
+/*End header section*/
 
 /* hero section */
 .hero-container {
@@ -303,7 +283,30 @@ a:focus {
   padding-top: 30px;
 }
 
+.counter-section {
+  display: flex;
+  gap: 30px; /* Space between counters */
+}
 
+.counter {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+  color: #009900;
+  padding: 20px; /* Padding around the counter */
+  text-align: center; /* Center text */
+  background-color: #fff; /* White background for counters */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding-top: 100px;
+}
+
+.title {
+  font-size: 1em; /* Smaller font size for title */
+  color: #080808; /* Grey color for title */
+  margin-top: 10px; /* Space between counter and title */
+}
 
 /* teacher container */
 /*

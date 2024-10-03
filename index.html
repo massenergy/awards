@@ -37,8 +37,9 @@
 </head>
 
 <body>
+    
   <div class="top_container">
-    <!-- start header section -->
+    <!-- Start replaceable header section -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -84,13 +85,11 @@
                 </li>
 
               </ul>
-          <!--      <form class="form-inline float-right my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <a href="https://workspace.google.com/dashboard" target="_blank" class="btn my-2 my-sm-0 nav_search-btn">Login</a>
-              </form>  -->
             </div>
         </nav>
       </div>
     </header>
+    <!-- End replaceable header section -->
 
 
     <section class="hero_section ">
@@ -144,56 +143,56 @@
 
 
    <!--==========================
-     start Facts Section
-   ============================-->
-   <section id="facts"  class="wow fadeIn">
-    <div class="container">
+    start Facts Section
+    ============================-->
+    
+    <section id="facts" class="wow fadeIn">
+      <div class="container">
+          <div class="row counters">
 
-    <!--
-      <header class="section-header">
-        <h3>Facts</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-      </header>
-    -->
+              <div class="col-lg-3 col-6 text-center">
+                  <span data-target="1174" class="counter">0</span>
+                  <p>Students</p>
+              </div>
 
-      <div class="row counters">
+              <div class="col-lg-3 col-6 text-center">
+                  <span data-target="35" class="counter">0</span>
+                  <p>Teachers</p>
+              </div>
 
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">1,174</span>
-          <p>Students</p>
-        </div>
+              <div class="col-lg-3 col-6 text-center">
+                  <span data-target="8" class="counter">0</span>
+                  <p>Essential Staff</p>
+              </div>
 
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">35</span>
-          <p>Teachers</p>
-        </div>
+              <div class="col-lg-3 col-6 text-center">
+                  <span data-target="16" class="counter">0</span>
+                  <p>Years Old</p>
+              </div>
 
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">8</span>
-          <p>Essential Staff</p>
-        </div>
+          </div>
 
-        <div class="col-lg-3 col-6 text-center">
-          <span data-toggle="counter-up">16</span>
-          <p>Years Old</p>
-        </div>
+          <div class="facts-img">
+              <img src="img/facts-img.png" alt="" class="img-fluid">
+          </div>
 
       </div>
+  </section>
+  
+  <!--==========================
+  End Facts Section
+  ============================-->
 
-      <div class="facts-img">
-        <img src="img/facts-img.png" alt="" class="img-fluid">
-      </div>
 
-    </div>
-  </section><!-- #facts -->
 
+  
       <div class="d-flex justify-content-center mt-5">
         <a href="about.html" class="call_to-btn  ">
 
           <span>
             Read More
           </span>
-          <img src="images/right-arrow.png" alt="">
+          <img src="images/right-arrow.png" alt=""> 
         </a>
       </div>
     </div>
@@ -406,20 +405,36 @@
 
 
 
-  <!-- footer section -->
+  <!-- Start footer section -->
   <section class="container-fluid footer_section">
     <p>
       Copyright &copy; 2024 All Rights Reserved By
       <a href="http://www.shule.xyz">Shule Leo</a>
     </p>
   </section>
-  <!-- footer section -->
+  <!-- End footer section -->
+
+  <!-- Start page link selector script-->
+  <script>
+    // Get the current URL
+    const currentUrl = window.location.href;
+
+    // Get all nav links
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Loop through each nav link
+    navLinks.forEach(link => {
+        // Check if the link's href matches the current URL
+        if (link.href === currentUrl) {
+            link.classList.add('active'); // Add the 'active' class
+        }
+    });
+  </script>
+  <!-- End page link selector script-->
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
- 
-
-
+  <script type="text/javascript" src="js/countup.js"></script>
 
 </body>
 
